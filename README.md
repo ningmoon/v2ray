@@ -4,6 +4,7 @@ v2rayA是一款适用于Windows、macOS和Linux操作系统的开源网络代理
 **本次部署环境：ubuntu 20.04**
 
 # 1 安装V2ray内核
+
 v2rayA 的功能依赖于 V2Ray 内核，所以需要先装内核
 
 V2Ray官方脚本 安装参考：[https://github.com/v2fly/fhs-install-v2ray](https://github.com/v2fly/fhs-install-v2ray)
@@ -61,12 +62,15 @@ sudo v2raya --reset-password  #重置密码
 在未启动服务时，连接的节点呈现柚红色。我们在左上角点击相应按钮启动服务。
 
 选择一个或多个节点连接。这里不建议选择过多的节点，4 个以内为佳。之后启动服务！启动之后启动的节点呈现蓝色，左上角的图标也显示为蓝色的正在运行。启动成功。
+
 ![在这里插入图片描述](https://github.com/ningmoon/v2ray/blob/main/docs/v2raya4.png?raw=true)
 
 配置代理
 
 默认情况下 v2rayA 会通过核心开放 20170(socks5), 20171(http), 20172(带分流规则的http) 端口。
+
 ![Linux使用v2ray客户端带WEB GUI部署教程](https://github.com/ningmoon/v2ray/blob/main/docs/v2raya5.png?raw=true)
+
 这种方法是 v2rayA 推荐的方法。它相比于其他方法具有诸多优势，v2rayA 可以一键开启透明代理，为所有程序提供代理服务。
 
 在设置中选择透明代理的分流方式，以及实现方式，然后保存即可。
